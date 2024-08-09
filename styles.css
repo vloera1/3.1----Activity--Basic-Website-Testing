@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?
-family=Actor&family=Candal&display=swap');
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
@@ -24,22 +22,19 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    }
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
 body {
     line-height: 1;
 }
-
 ol, ul {
     list-style: none;
 }
-
 blockquote, q {
     quotes: none;
 }
@@ -202,10 +197,10 @@ header img{
     margin: 1rem auto;
 }
 #homeMain span{
-    display: block;
+        display: block;
 }
 #aboutPlants{
-    margin-bottom: 1rem;
+margin-bottom: 1rem;
 }
 #aboutPlants img, #contactUs img{
     width: 60%;
@@ -225,7 +220,7 @@ header img{
         text-decoration: none;
         background-color: var(--light-green);
         color: var(--dark-gray);
-}
+    }
 }
 /* -----------------------SMALL STYLES--------------------- */
 @media screen and (min-width: 500px){
@@ -233,19 +228,19 @@ header img{
         display: grid;
         grid-template-columns: 1fr 3fr;
         align-items: center;
-}
-h1{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    text-align: left;
-}
-#logo{
-    display: block;
-    width: 90px;
-    margin: 0 auto;
-}
-nav{
-    grid-column: 1/-1;
+    }
+    h1{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: left;
+    }
+    #logo{
+        display: block;
+        width: 90px;
+        margin: 0 auto;
+    }
+    nav{
+        grid-column: 1/-1;
     }
 }
 @media screen and (min-width: 600px){
@@ -257,7 +252,7 @@ nav{
         margin: 0 auto;
     }
     #contactUs div{
-        display: grid;  
+        display: grid;
         grid-template-columns: 2fr 1fr;
         align-items: center;
         max-width: 680px;
@@ -279,17 +274,31 @@ nav{
 }
 /* -----------------------MED SCREEN STYLES-------------------- */
 @media screen and (min-width: 700px){
-    footer div{
+    header img{
+        height: auto;
+        width: 80px;
+        margin: 2 auto;
+    }
+      footer div{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
         padding-bottom: 1rem;
         max-width: 700px;
         margin: 0 auto;
-}
+    }
+    p{
+        margin: 2 auto;
+        padding: 0 auto;
+    }
 }
 /* -----------------------LARGE SCREEN STYLES-------------------- */
 @media screen and (min-width: 950px){
+    header img{
+        height: auto;
+        min-width: 40px;
+        margin: 0 auto;
+    }
     header{
         grid-template-columns: 1fr 2fr 3fr;
     }
@@ -316,6 +325,10 @@ nav{
     }
     address a{
         padding: 0.5rem;
+    }
+    p{
+        margin: 3 auto;
+        padding: 0 auto;
     }
 }
 
